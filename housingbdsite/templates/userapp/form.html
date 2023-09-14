@@ -1,0 +1,15 @@
+
+<div class="container">
+    <h3>This form is created by Form</h3>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ sample_form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    {% if form_submitted %}
+        <p>Name:  {{your_name }}</p>
+        <p>Name:  {{your_dob }}</p>
+        <p>Name:  {{your_email }}</p>
+    {% endif %}
+</div>
