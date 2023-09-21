@@ -1,4 +1,6 @@
 # This is the basic command for the Django Application
+
+### Creating a virtualenv & activate it
 ```
     python -m venv env
     source env/Scripts/activate
