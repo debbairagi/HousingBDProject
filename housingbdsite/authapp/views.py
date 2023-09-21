@@ -38,3 +38,6 @@ def add_album(request):
     diction = {'album_form': album_form}
     return render(request, 'authapp/album_add.html', context=diction)
 
+def album_list(request):
+    return render(request, 'authapp/album_list.html', {})
+

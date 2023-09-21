@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>This is the User Sign Up Page</h3>
+    {% if registered %}
+    <div class="alert alert-success"> Congratulations! Registration Successfull</div>
+    {% else %}
+    <form enctype="multipart/form-data" action="" method="POST">
+        {{user_form.as_p}}
+        {{user_info_form.as_p}}
+        {% csrf_token %}
+        <input type="submit" value="Register">
+    </form>
+    {% endif %}
+</div>
+{% endblock %}

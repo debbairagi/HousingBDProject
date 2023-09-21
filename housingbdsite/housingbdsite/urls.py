@@ -22,4 +22,5 @@ urlpatterns = [
     path('property/', include('propertyapp.urls')),
     path('', include('userapp.urls')),
     path('music/', include('authapp.urls')),
+    path('', include('loginapp.urls')),
 ]

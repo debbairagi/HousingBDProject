@@ -20,7 +20,7 @@
             {% for musician in musicians %}
             <tr>
                 <th scope="row">{{musician.id}}</th>
-                <td>{{musician.first_name}}</td>
+                <td> <a href="#">{{musician.first_name}}</a></td>
                 <td>{{musician.last_name}}</td>
                 <td>{{musician.instrument}}</td>
             </tr>
@@ -46,7 +46,7 @@
             {% if album_lists%}
             {% for album in album_lists %}
             <tr>
-                <td>{{album.artist}}</td>
+                <td> <a href="">{{album.artist}}</a></td>
                 <td>{{album.name}}</td>
                 <td>{{album.release_date}}</td>
             </tr>
