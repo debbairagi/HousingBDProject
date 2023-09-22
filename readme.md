@@ -26,3 +26,19 @@ password = debbindu
 `python manage.py runserver`
 ### Creating New App
 `python manage.py startapp app_name`
+
+### Necessary Git Command
+
+```
+git clone
+git init
+git log
+git add
+git branch
+git checkout
+git commit
+git push
+git merge
+git pull
+git status
+```
