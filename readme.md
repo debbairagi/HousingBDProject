@@ -30,15 +30,17 @@ password = debbindu
 ### Necessary Git Command
 
 ```
-git clone
-git init
-git log
-git add
-git branch
-git checkout
-git commit
-git push
-git merge
-git pull
-git status
+    git clone url_name
+    git init 
+    git log
+    git add .
+    git branch
+    git checkout -b branch_name
+    git switch branch_name
+    git commit -m "your message name"
+    git push -u origin branch_name
+    git push
+    git merge
+    git pull
+    git status
 ```
