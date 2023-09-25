@@ -56,5 +56,5 @@ def signup_view(request):
         user_form = UserForm()
         user_info_form = UserInfoForm()
 
-    diction = {'user_form': user_form, 'user_info_form':user_info_form, 'registered': registered }
+    diction = {'user_form': user_form,'registered': registered }
     return render(request, 'loginapp/signup.html', context=diction)

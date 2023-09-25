@@ -1,14 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container">
+<div class="container bg-light shadow-md p-5 form-layout">
     <br>
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <h3>Please Login: </h3>
+    <div class="text-center">
+        <h3>Login to your account</h3>
+        <h5>Start managing your client today!</h5>
+    </div>
+
+    <hr />
+    <br />
     <form action="{% url 'user_login' %}" method="POST">
         <label for="username">Username: </label>
         <input type="text" name="username" id="" placeholder="Enter Username.. " required class="form-control">
@@ -16,8 +20,12 @@
         <input type="password" name="password" id="" placeholder="Enter Password.. " required class="form-control">
 
         {% csrf_token %}
+        <button class="btn btn-primary w-100 btn-black p-2" type="submit">Login Now</button>
         <br>
-        <input type="submit" name="submit" value="Login">
+        <br>
+        <div class="text-center">
+            <p>Don't have an account ? <a href="{% url 'signup_view' %}">Register Here</a> </p>
+        </div>
     </form>
     <br>
     <br>
